@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class FoodSeeder extends Seeder
+class CategorySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +14,6 @@ class FoodSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\food::factory(6)->create();
+        \App\Models\Category::factory(3)->create();
     }
 }
